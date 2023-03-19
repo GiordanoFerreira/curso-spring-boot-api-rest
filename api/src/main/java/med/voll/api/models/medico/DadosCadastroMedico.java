@@ -9,16 +9,16 @@ import med.voll.api.models.endereco.DadosEndereco;
 
 public record DadosCadastroMedico(
 
-        @NotBlank String nome,
+                @NotBlank String nome,
 
-        @NotBlank @Email String email,
+                @NotBlank @Email String email,
 
-        @NotBlank String telefone,
-        
-        @NotBlank @Pattern(regexp = "\\d{6}") String crm,
+                @NotBlank String telefone,
 
-        @NotNull Especialidade especialidade,
+                @NotBlank @Pattern(regexp = "\\d{6}") String crm,
 
-        @NotNull @Valid DadosEndereco endereco) {
+                @NotNull Especialidade especialidade,
+
+                @NotNull @Valid DadosEndereco endereco) {
 
 }
